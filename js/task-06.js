@@ -12,7 +12,7 @@ validationInput.addEventListener("blur", () => {
     validationInput.classList.remove("valid");
   }
 
-  console.dir(validationInput);
-  console.dir(typeof(validationInput.dataset.length));
+  // console.dir(validationInput);
+  // console.dir(typeof(validationInput.dataset.length));
 });
 
