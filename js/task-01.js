@@ -6,9 +6,9 @@ console.log("Number of categories:", groupItems.length);
 
 
 groupItems.forEach((item) => {
-  const textInEl = item.querySelector("h2").textContent;
+  const textInEl = item.firstElementChild.textContent;
 
-  const allTheElements = item.querySelectorAll("li");
+  const allTheElements = item.lastElementChild.children;
   
   console.log(`Category: ${textInEl}`);
   console.log("Number of Elements: ", allTheElements.length);

@@ -9,13 +9,15 @@ const ingredients = [
 
 const parentUl = document.getElementById("ingredients");
 
-ingredients.forEach((element) => {
+const improvedArray = ingredients.map((ingredient) => {
   const listItem = document.createElement("li");
 
-  listItem.textContent = element;
+  listItem.textContent = ingredient;
 
   listItem.classList.add("item");
 
-  parentUl.appendChild(listItem);
+  return listItem;
 });
 
+
+parentUl.append(...improvedArray);
